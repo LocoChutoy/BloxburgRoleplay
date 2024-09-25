@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloxburg Roleplay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bloxburg Roleplay Hub</h1>
+    </header>
+    <main>
+        <section id="submit-roleplay">
+            <h2>Create a Roleplay</h2>
+            <form id="roleplay-form">
+                <label for="title">Roleplay Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="date">Date and Time:</label>
+                <input type="datetime-local" id="date" name="date" required>
+
+                <label for="neighborhood-code">Neighborhood Code:</label>
+                <input type="text" id="neighborhood-code" name="neighborhood-code" required>
+
+                <label for="image">Upload Image:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+
+                <button type="submit">Submit Roleplay</button>
+            </form>
+            <div id="cooldown-timer"></div>
+        </section>
+
+        <section id="roleplay-list">
+            <h2>Current Roleplays</h2>
+            <div id="roleplay-container">
+                <!-- Roleplays will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
